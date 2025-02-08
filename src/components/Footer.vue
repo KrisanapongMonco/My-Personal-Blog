@@ -1,6 +1,7 @@
 <template>
     <footer :class="['text-center py-3 mt-auto', themeClass]">
-      <p>&copy; 2023 My Personal Blog. All rights reserved.</p>
+      <p>&copy; {{ new Date().getFullYear() }} My Personal Blog. All rights reserved.</p>
+    
     </footer>
   </template>
   
