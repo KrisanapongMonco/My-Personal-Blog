@@ -1,7 +1,7 @@
 <template>
-    <div class="blog-post">
-      <h1>{{ title }}</h1>
-      <p class="date">{{ formattedDate }}</p>
+    <div class="blog-post my-4 p-4 border rounded bg-light">
+      <h1 class="display-5">{{ title }}</h1>
+      <p class="text-muted">{{ formattedDate }}</p>
       <div class="content" v-html="content"></div>
     </div>
   </template>
@@ -26,28 +26,3 @@
   
   const formattedDate = ref(new Date(props.date).toLocaleDateString());
   </script>
-  
-  <style scoped>
-  .blog-post {
-    margin: 20px 0;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-  }
-  
-  h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
-  }
-  
-  .date {
-    font-size: 0.9em;
-    color: #888;
-  }
-  
-  .content {
-    margin-top: 10px;
-    line-height: 1.6;
-  }
-  </style>
