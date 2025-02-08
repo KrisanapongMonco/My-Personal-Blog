@@ -1,10 +1,10 @@
 <template>
   <div :class="['d-flex flex-column min-vh-100', theme]">
-    <Navbar @toggle-theme="toggleTheme" />
+    <Navbar :theme="theme" @toggle-theme="toggleTheme" />
     <main class="flex-fill p-4">
       <router-view />
     </main>
-    <Footer />
+    <Footer :theme="theme" />
   </div>
 </template>
 
